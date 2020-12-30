@@ -92,7 +92,8 @@ class App extends Component {
       <div className="App">
         <div className="form-wrapper">
           <h1>Create Account</h1>
-          <form onSubmit={this.handleSubmit} noValidate>
+          <form  onSubmit={this.handleSubmit} noValidate data-netlify="true" name="signup" netlify method="post">
+            <input type="hidden" name="signup" value="signup" />
             <div className="firstName">
               <label htmlFor="firstName">First Name</label>
               <input
